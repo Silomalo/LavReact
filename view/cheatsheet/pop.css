@@ -1,0 +1,90 @@
+
+
+.containerMain {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff173;
+    transition: 0.5s;
+    padding: 5px;
+    
+}
+.containerMain #conte{
+    background-color: #333;
+}
+
+.containerMain#blur.active{
+    background-color: rgba(51, 51, 51,.8);
+    pointer-events: none;
+    min-width: 100vw;
+}
+.containerMain#content.active{
+    background-color: rgba(51, 51, 51,.8);
+    pointer-events: none;
+    min-width: 100vw;
+}
+h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+a 
+{
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #f27649;
+    border-radius: 0px;
+}
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 40px;
+    padding-top: 60px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #fff;
+    visibility: hidden;
+    transition: 0.5s;
+    border-radius: 0px;
+}
+#popup .forms{
+    padding: 2px;
+}
+#popup h3{
+   text-align: center;
+}
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 28px;
+    transform: rotate(45deg);
+    font-weight: bold;
+    cursor: pointer;
+    color: #f27649;
+}
+.closeRight {
+    font-size: 20px;
+    transform: rotate(90deg);
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    float: right;
+    border-radius: 50%;
+}
